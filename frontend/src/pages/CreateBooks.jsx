@@ -22,7 +22,7 @@ const CreateBooks = () => {
     };
 
     setLoading(true)
-    axios.post('http://localhost:5000/books' , newBook)
+    axios.post('http://localhost:3000/books' , newBook)
     .then(()=>{
       setLoading(false)
       navigate('/')

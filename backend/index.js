@@ -1,8 +1,13 @@
 import express from "express"
-import { PORT , mongoDBurl } from "./config.js"
+import {  mongoDBurl } from "./config.js"
 import mongoose from 'mongoose'
 import cors from 'cors'
 import router from "../backend/routes/bookRoute.js"
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+const PORT = process.env.PORT
 
 const app = express()
 

@@ -10,7 +10,7 @@ const DeleteBook = () => {
   const navigate = useNavigate()
 
   const handleDelete =()=>{
-    axios.delete( `http://localhost:5000/books/${id}`)
+    axios.delete( `http://localhost:3000/books/${id}`)
   .then(()=>{
     setLoading(false)
     navigate('/')
